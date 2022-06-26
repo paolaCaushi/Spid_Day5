@@ -1,18 +1,18 @@
 package com.example.demo.testServices;
 
-import com.example.demo.SpidApplication;
+import com.example.demo.Day5Application;
 import com.example.demo.model.Spid;
+import com.example.demo.service.SpidService;
 import com.example.demo.utilities.Status;
 import org.junit.jupiter.api.BeforeAll;
-import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.TestInstance;
 import org.mockito.Mock;
 import org.springframework.boot.test.context.SpringBootTest;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.mockito.Mockito.when;
-@SpringBootTest(classes = {SpidApplication.class})
+@SpringBootTest(classes = {Day5Application.class})
 @TestInstance(TestInstance.Lifecycle.PER_CLASS)
 class SpidServiceTest {
 
